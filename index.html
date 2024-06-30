@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-DO-List</title>
+</head>
+<body>
+    <div class="hero">
+        <video loop autoplay  id="background-video" >
+            <source src="Lofi.webm" id="videoplayer" type="video/webm">         <!--bg videeo -->
+        </video>
+
+                                           <!--  swich btn img-->
+        <div class="swich-btn">
+            <img src="swich1-icon.png" id="swich" width="60px" alt="img">    
+        </div>
+
+        <div class="box1"><h2 class="logo">To-Do List</h2></div>             <!--logo-->
+
+        <div class="box2">                                                <!--user input and adding system-->
+            <input type="text" class="userValue" placeholder="add.." > 
+            <i class="fa-solid fa-square-plus add" style="color: #ffffff;" onclick={todoAdd()}></i> 
+
+            <img src="play-icon.png" alt="img" id="play-icon" width="40px" >
+            <audio id="myAudio"  loop>
+                <source src="audio-conver.mp3" id="myAudioSource" type="audio/mp3">          <!--audio-->
+            </audio>
+           
+       
+            
+        </div>
+        <div class="box3">                                   <!--add list-->
+           
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
